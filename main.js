@@ -83,6 +83,10 @@ function enqueue() {
             col3.textContent = order;
             baris.appendChild(col3);
 
+            var col4 = document.createElement('td');
+            col4.textContent = '';
+            baris.appendChild(col4);
+
             tblbody.appendChild(baris);
 
             document.getElementById('Name').value = '';
@@ -96,6 +100,8 @@ function enqueue() {
 
             insertBtn.disabled = false;
 
+            document.getElementById('tampil-stok').innerHTML=stok;
+
         }
     }
 }
@@ -104,7 +110,7 @@ function dequeue(){
     var tblbody = document.getElementById('bodytbl');
     if (tblbody.children.length === 0){
         var sound3 = new Audio();
-        sound3.src = "hover-sound3.mp3";
+        sound3.src = "sound/hover-sound3.mp3";
         sound3.onerror = function() {
             console.error("Failed to load sound3.");
         };
@@ -183,6 +189,7 @@ function addStok(){
 
     if (!isNaN(Add) && Add >= 0) {
         alert('Stok berhasil ditambahkan desu. Stok saat ini : ' + stok);
+        document.getElementById('tampil-stok').innerHTML=stok;
     } else {
         alert('salah bang, gak valid');
     }
@@ -216,3 +223,4 @@ function displaySalesResult() {
     alert('Terimakasih atas kerja kerasnya onee-chan //>.<//');
     alert('お姉ちゃん、お疲れ様でした //>.<//');
 }
+
