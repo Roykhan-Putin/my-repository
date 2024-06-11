@@ -21,7 +21,7 @@ html, body {
 .desktop {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     height: 100%;
     justify-content: center;
     flex-direction: column;
