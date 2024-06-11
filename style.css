@@ -13,7 +13,7 @@
 body {
     color: #333;
     background: #ddd;
-    background-size: cover;
+    background-size: contain;
     background-image: var(--gradient);
     animation: bg-animation 25s infinite alternate;
 }
