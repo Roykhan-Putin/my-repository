@@ -9,11 +9,16 @@
 </head>
 <body>
 <div class="desktop">
+    <div class="video-background">
+        <video autoplay muted loop id="video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video></div>
         <div class="overlap">
             <div class="group">
                 <div class="overlap-group">
                     <div class="overlap-group-wrapper">
-                        <div class="div-wrapper"><div class="text-wrapper" onmouseover="sound1.play()">一楽ラーメン</div></div>
+                        <div class="div-wrapper"><div class="text-wrapper" onmousedown="sound1.play()">一楽ラーメン</div></div>
                     </div> 
                 </div>
             </div> 
@@ -44,6 +49,7 @@
                                 <th class="col-no">番号 (NO)</th>
                                 <th class="col-nama">名前 (Name)</th>
                                 <th class="col-pesanan">注文数 (Order Quantity)</th>
+                                <th> 在庫 (stock) = <p id="tampil-stok"></p></th>
                             </tr>
                         </thead>
                     </div>
