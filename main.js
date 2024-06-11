@@ -110,7 +110,7 @@ function dequeue(){
     var tblbody = document.getElementById('bodytbl');
     if (tblbody.children.length === 0){
         var sound3 = new Audio();
-        sound3.src = "sound/hover-sound3.mp3";
+        sound3.src = "hover-sound3.mp3";
         sound3.onerror = function() {
             console.error("Failed to load sound3.");
         };
