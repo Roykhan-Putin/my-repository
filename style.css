@@ -10,24 +10,13 @@
     100% {background-position: left;}
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
 .desktop {
     display: flex;
-    margin: 0;
-    padding: 20px;
-    height: 100%;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    padding: 20px;
     box-sizing: border-box;
     line-height: 1.6;
     color: #333;
