@@ -16,6 +16,8 @@ body {
     background-size: contain;
     background-image: var(--gradient);
     animation: bg-animation 25s infinite alternate;
+    width: 100%;
+    heigth: 100%;
 }
     
 .desktop {
