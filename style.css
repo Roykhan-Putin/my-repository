@@ -45,7 +45,7 @@
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    background-image: url(./img/ellipse-1.png);
+    background-image: url(.ellipse-1.png);
     background-size: contain ;
     background-repeat: no-repeat;
     box-shadow: 50px 50px 50px #00000040;
@@ -80,7 +80,7 @@
 .div-wrapper {
     width: 349px;
     height: 117px;
-    background-image: url(./img/ellipse-2.svg);
+    background-image: url(.ellipse-2.svg);
     background-size: cover;
     background-position: center;
     display: flex;
