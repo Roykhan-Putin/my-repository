@@ -224,3 +224,16 @@ function displaySalesResult() {
     alert('お姉ちゃん、お疲れ様でした //>.<//');
 }
 
+var sound3 = document.getElementById('sound3');
+
+var isPlaying = false;
+
+function toggleSound() {
+    if (isPlaying) {
+        sound3.pause();
+        sound3.currentTime = 0; 
+    } else {
+        sound3.play();
+    }
+    isPlaying = !isPlaying; 
+}
