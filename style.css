@@ -10,6 +10,14 @@
     100% {background-position: left;}
 }
 
+body {
+    color: #333;
+    background: #ddd;
+    background-size: cover;
+    background-image: var(--gradient);
+    animation: bg-animation 25s infinite alternate;
+}
+    
 .desktop {
     display: flex;
     flex-direction: column;
