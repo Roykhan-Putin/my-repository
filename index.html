@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+    <title>web queue</title>
+</head>
+<body>
+<div class="desktop">
+        <div class="overlap">
+            <div class="group">
+                <div class="overlap-group">
+                    <div class="overlap-group-wrapper">
+                        <div class="div-wrapper"><div class="text-wrapper" onmousedown="sound1.play()">一楽ラーメン</div></div>
+                    </div> 
+                </div>
+            </div> 
+
+            <!-- Button Container -->
+            <div class="button-container">
+                <div class="enqueue" id="btn-enq">
+                    <button id="insert-btn" onclick="boxEnqueue()">挿入 (insert)</button>
+                </div>
+                <div class="dequeue" id="btn-deq">
+                    <button id="remove-btn" onclick="dequeue()">削除 (remove)</button>
+                </div>
+                <div class="clearAll" id="btn-clr">
+                    <button id="clear-btn" onclick="clearAll()">すべてクリア (clear all)</button>
+                </div>
+                <div class="addStock" id="btn-stk">
+                    <button id="stock-btn" onclick="boxAddStock()">ストックを追加 (add stock)</button>
+                </div>
+                <div class="endProgram">
+                    <button id="end-program-btn" onmousedown="sound2.play()" onclick="endProgram()">プログラム終了 (End Program)</button>
+                </div>
+            </div>
+            <div class="tabel" id="tbl">
+                <table class="maintabel" id="maintbl">
+                    <div class="group-5">
+                        <thead class="headTabel" id="headtbl">
+                            <tr>
+                                <th class="col-no">番号 (NO)</th>
+                                <th class="col-nama">名前 (Name)</th>
+                                <th class="col-pesanan">注文数 (Order Quantity)</th>
+                            </tr>
+                        </thead>
+                    </div>
+                        <tbody class="bodyTabel" id="bodytbl">
+
+                        </tbody>
+                </table>
+            </div>
+        </div>
+            <div class="group-8">
+                <div class="overlap-7">
+                    <div class="text-wrapper-12">🗿追われるように急いでいる
+                        乾いた胸がかりたてるのさ
+                        
+                        誰のためでなく誰のものでなく俺たちのいまが
+                        
+                        痛みほどき心ほどき影をほどき
+                        息をつめて走りぬけろ闇をさ裂いて
+                        
+                        闘うことも愛しあう🗿</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script>
+    var sound1 = new Audio();
+    sound1.src = "sound/hover-sound.mp3";
+    var sound2 = new Audio();
+    sound2.src = "sound/hover-sound2.mp3";
+</script>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
