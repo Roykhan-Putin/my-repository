@@ -64,9 +64,25 @@ function enqueue() {
     var order = inputOrder.value;
 
     if(stok < order){
+        var sound3 = new Audio();
+        sound3.src = "hover-sound3.mp3";
+        sound3.onerror = function() {
+            console.error("Failed to load sound3.");
+        };
+        sound3.play().catch(error => {
+            console.error("Failed to play sound3:", error);
+        });
         alert('gomen stok saat ini tidak cukup desu, stok saat ini masih  ' + stok + ' desu')
     }else{
         if(nama === '' || order === ''){
+            var sound3 = new Audio();
+            sound3.src = "hover-sound3.mp3";
+            sound3.onerror = function() {
+                console.error("Failed to load sound3.");
+            };
+            sound3.play().catch(error => {
+                console.error("Failed to play sound3:", error);
+            });
             alert("isi dulu, onee chan >_<");
             return;
         }else{
@@ -191,6 +207,14 @@ function addStok(){
         alert('Stok berhasil ditambahkan desu. Stok saat ini : ' + stok);
         document.getElementById('tampil-stok').innerHTML=stok;
     } else {
+        var sound3 = new Audio();
+        sound3.src = "hover-sound3.mp3";
+        sound3.onerror = function() {
+            console.error("Failed to load sound3.");
+        };
+        sound3.play().catch(error => {
+            console.error("Failed to play sound3:", error);
+        });
         alert('salah bang, gak valid');
     }
 
